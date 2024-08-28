@@ -8,7 +8,7 @@ const authenticate = require("./middlewares/userMiddleware");
 
 app.use(cors())
 
-app.get("/",authenticate,(req,res)=>{
+app.get("/",(req,res)=>{
     res.json({msg:"working"});
 })
 
